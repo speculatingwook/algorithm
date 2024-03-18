@@ -63,3 +63,23 @@ public static int binarySearchRecursive(int nums[], int l, int r, int value){
 		- 정렬 알고리즘이 이진탐색 알고리즘보다 시간 복잡도가 높음
 
 
+
+## 정렬 후 이진탐색 vs 선형 탐색
+
+![[binary_search_5.png]]
+
+
+
+## 회전된 배열에서의 검색
+
+```java
+public class Program{
+	public static void main(String[] args){
+		int[] arry = new int[]{20, 25, 26, 29, 33, 1, 3, 5, 6, 10, 11, 19};
+		
+		int index = indexOfRotatedArray(arry, 0, arry.length - 1, 0);
+		
+		
+	}
+}
+```
