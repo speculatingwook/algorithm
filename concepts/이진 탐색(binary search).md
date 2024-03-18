@@ -32,6 +32,17 @@ $O(log n)$
 	- 정복이라 하기에는 모든 문제 영역을 방문하지 않음
 	- 따라서 decrease-and-conquer라고 부르자는 소수설도 있음
 - 재귀함수로 쉽게 작성 가능
+
 ```java
-binarySe
+binarySearchRecursive(int nums[], int l, int r, int value){
+	if(l>r){
+		break;
+	}
+	int m = (l + r) / 2;
+	
+	
+	
+}
 ```
+
+
