@@ -81,5 +81,27 @@ public class Program{
 		
 		
 	}
+	
+	
+	private static int indexOfRotatedArray(int[] arry, int start, int end, int num){
+		if(start > end){
+			return -1;
+		}
+		
+		int mid = (start + end) / 2;
+		if(arry[mid] == num){
+			return mid;
+		}
+		// start부터 mid까지 있느
+		if(arry[start] <= arry[mid]){
+			if(num >= arry[start] && num <= arry[mid]){
+				return indexOfRotatedArray(arry, start, mid -1, num);
+			}
+			return indexOfRotatedArray(arry, mid + 1, end, num);
+		}
+		if(num >= arry[mid] && num <= arry[end]) {
+			return indexOfRotatedArrary(arry, mid + 1, end, num);
+		}
+	}
 }
 ```
