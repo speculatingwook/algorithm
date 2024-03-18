@@ -79,7 +79,6 @@ public class Program{
 		
 		int index = indexOfRotatedArray(arry, 0, arry.length - 1, 0);
 		
-		
 	}
 	
 	
@@ -92,16 +91,19 @@ public class Program{
 		if(arry[mid] == num){
 			return mid;
 		}
-		// start부터 mid까지 있느
+		// start부터 mid까지 있는 숫자들이 정렬된 경우
 		if(arry[start] <= arry[mid]){
+			// num이 start와 mid 사이에 있는 경우
 			if(num >= arry[start] && num <= arry[mid]){
 				return indexOfRotatedArray(arry, start, mid -1, num);
 			}
 			return indexOfRotatedArray(arry, mid + 1, end, num);
 		}
+		// mid부터 end까지에 있는 숫자들이 정렬된 경우
 		if(num >= arry[mid] && num <= arry[end]) {
 			return indexOfRotatedArrary(arry, mid + 1, end, num);
 		}
+		return indexOfRotatedArrary(arry, start, mid - 1, num);
 	}
 }
 ```
