@@ -36,17 +36,19 @@ $O(log n)$
 ```java
 public static int binarySearchRecursive(int nums[], int l, int r, int value){
 	if(l>r){
-		break;
+		return -1;
 	}
 	int m = (l + r) / 2;
 	if(nums[m] == value){
-		returm m;
+		return m;
 	}
 	if(nums[m] < value){
-		return binarySearchRecursive(nums[], m + 1, r, value);
-	} else(nums[m] > value){
-		return binarySearchRecursive(nums[], l, m - 1, value);
+		return binarySearchRecursive(nums, m + 1, r, value);
 	}
+	if(nums[m] > value){
+		return binarySearchRecursive(nums, l, m - 1, value);
+	}
+	return -1;
 }
 ```
 
@@ -99,7 +101,7 @@ public class Program{
 			}
 			return indexOfRotatedArray(arry, mid + 1, end, num);
 		}
-		// mid부터 end까지에 있는 숫자들이 정렬된 경우
+		// mid부터 end까지에 있는 숫자들이 정렬된 경우 && 그 사이에 num이 있는 경우
 		if(num >= arry[mid] && num <= arry[end]) {
 			return indexOfRotatedArrary(arry, mid + 1, end, num);
 		}
