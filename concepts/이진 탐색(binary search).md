@@ -34,15 +34,32 @@ $O(log n)$
 - 재귀함수로 쉽게 작성 가능
 
 ```java
-binarySearchRecursive(int nums[], int l, int r, int value){
+public static int binarySearchRecursive(int nums[], int l, int r, int value){
 	if(l>r){
 		break;
 	}
 	int m = (l + r) / 2;
-	
-	
-	
+	if(nums[m] == value){
+		returm m;
+	}
+	if(nums[m] < value){
+		return binarySearchRecursive(nums[], m + 1, r, value);
+	} else(nums[m] > value){
+		return binarySearchRecursive(nums[], l, m - 1, value);
+	}
 }
 ```
+
+
+## 정렬된 데이터와 알고리즘
+- 정렬된 데이터에 사용할 수 있는 효율적인 알고리즘들이 많음
+	- 어떤 값의 위치 찾기: $O(log n)$
+	- 최솟값/최댓값 찾기: $O(1)$
+- 정렬되지 않은 배열은?
+	- 정렬 알고리즘을 사용하여 정렬 가능
+	- 일단 정렬하면 효율적인 알고리즘 사용 가능
+	- 하지만 배열에 새 요소를 추가하면 다시 정렬해야 함
+		- 배보다 배꼽이 더 커질 수도 있음
+		- 정렬 알고리즘이 이진탐색 알고리즘보다 시간 복잡도가 높음
 
 
