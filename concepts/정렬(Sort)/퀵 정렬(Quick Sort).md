@@ -8,6 +8,7 @@
 	- 이 과정을 재귀적으로 반복
 	- 재귀 단계가 깊어질 때마다 새로운 pivot 값을 뽑음
 
+- pivot과 교환이 동일하지 않게 이동, 인덱스도 생각해야 해서 복잡하게 느껴질 수 있음
 
 ```java
 public static void quickSort(int[] nums){
