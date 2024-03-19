@@ -10,15 +10,13 @@
 
 ```java
 public static void selectionSort(int[] nums){
-	for(int i =0; i < nums.length; i++){
-		
-	}
-
-}
-
-private static int findMinIndex(int[] nums){
-	for(int i=0; i < nums.length; i++){
-		for(int j = 0; j< nums.length)
+	for(int i = 0; i< nums.length - 1; i++){
+		int minIndex = i;
+		for(int j = i + 1; j < nums.length; j++){
+			if(nums[j]< arr{minIndex])
+		}
 	}
 }
+
+
 ```
