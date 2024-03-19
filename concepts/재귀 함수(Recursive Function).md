@@ -67,8 +67,18 @@ public static int fibonacciRecursive(int number) {
 public int calculateSignature(int[] data, int multiplier) {
 	int[] tempData = new int[data.length];
 	for(int i =0; i< data.length; ++i) {
-		tempData[i] = data[i] * multiplier
+		tempData[i] = data[i] * multiplier;
 	}
-
+	
+	return accumulate(tempData);
 }
 ```
+
+## 꼬리 호출과 스택 프레임
+- 스택 프레임이 존재하는 이유
+	- 함수에서 사용중인 변수 값을 유지하기 위해
+	- 타 함수 호출 후 반환되면 스택에 저장했던 값을 되돌려 사용
+- 꼬리 호출의 경우는 타 함수로부터 반환 후 더 이상 연산이 없음
+	- 곧바로 호출자로 반환
+- 따라서 스택 프레임에 저장해 놓은 변수 값을 재사용하지 않음
+
