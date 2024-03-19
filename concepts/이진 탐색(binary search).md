@@ -56,13 +56,19 @@ public static int binarySearchRecursive(int nums[], int l, int r, int value){
 }
 ```
 
-
 - C
 ```c
+/*
+	- n = l - r
+*/
 int search(int a[], int n, int x){
 	if (n==0) return -1;
 	m = n / 2;
-	if (x==a[m])
+	if (x==a[m]) return m;
+	else if (x<a[m]) return search(a, m, x);
+	else { 
+		r = search(a + m + 1, n - m - 1, x)
+	}
 
 }
 ```
