@@ -81,4 +81,17 @@ public int calculateSignature(int[] data, int multiplier) {
 - 꼬리 호출의 경우는 타 함수로부터 반환 후 더 이상 연산이 없음
 	- 곧바로 호출자로 반환
 - 따라서 스택 프레임에 저장해 놓은 변수 값을 재사용하지 않음
+- 이런 경우 컴파일러가 스택 프레임을 따로 안 만드는 최적화를 하기도 함
+	- 꼬리 호출 제거(tail call elimination)
+	- 꼬리 호출 최적화(tail call optimization)
 
+
+## 꼬리 재귀(tail recursion)
+- 꼬리 호출의 특수한 경우
+- 마지막에 호출하는 함수(꼬리 호출)가 자기 자신(재귀)
+- 꼬리 호출과 똑같은 최적화가 적용됨
+
+
+```java
+
+```
