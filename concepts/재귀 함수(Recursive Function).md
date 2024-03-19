@@ -14,5 +14,16 @@
 - 수학적 정의
 $F_0 = 0$,
 $F_1 = 1$,
-$F_n = F_{n - 1} + F_{n -2} \\ , (n > 1)$
+$F_n = F_{n - 1} + F_{n -2} \, , (n > 1)$
+
+
+```java
+public static int fibonacciRecursive(int number) {
+	if (number <= 1){
+		return number;	
+	}
+	
+	return fibonacciRecursive(number - 2) + fibonacciRecursive(number - 1);
+}
+```
 
