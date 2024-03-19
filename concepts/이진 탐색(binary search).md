@@ -73,11 +73,11 @@ int search(int a[], int n, int x){
 	}
 }
 
-
+// 
 int search(int a[], int n, int x){
 	if (n == 0) return -1;
 	m = n / 2;
-	if (x==a[m]) return m;
+	if (x==a[m]) return 1;
 	else if (x<a[m]) return search(a, m , x);
 	else { return search(a + m + 1, n - m - 1, x);
 	}
