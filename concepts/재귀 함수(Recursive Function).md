@@ -56,4 +56,19 @@ public static int fibonacciRecursive(int number) {
 	- 성능 문제가 일어날 가능성이 큰 경우
 	- 성능 문제가 확인된 경우
 - 모든 재귀함수는 반복문으로 작성 가능
-	- 복잡한 경우 스택 등의 뎅
+	- 복잡한 경우 스택 등의 데이터 구조를 사용해야 함
+
+
+
+## 꼬리 호출(tail call)
+- 함수 코드 제일 마지막에서 다른 함수를 호출하는 경우
+- 그 후에 실행하는 명령어가 없음
+```java
+public int calculateSignature(int[] data, int multiplier) {
+	int[] tempData = new int[data.length];
+	for(int i =0; i< data.length; ++i) {
+		tempData[i] = data[i] * multiplier
+	}
+
+}
+```
