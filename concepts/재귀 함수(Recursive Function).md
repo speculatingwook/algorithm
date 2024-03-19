@@ -92,6 +92,26 @@ public int calculateSignature(int[] data, int multiplier) {
 - 꼬리 호출과 똑같은 최적화가 적용됨
 
 
+- 팩토리얼 꼬리 재귀 함수
+
 ```java
+int factorial(int n){
+	return factorialRecursive(n, 1);
+}
+
+int factorialRecursive(int n, int fac) {
+	if (n <= 1){
+		return fac;
+	}
+	return factorialRecursive(n-1, n * fac);
+}
 
 ```
+
+- 계산에 대한 책임? 을 함수 매개변수로 줌(스택 프레임이 아님)
+
+
+## 꼬리 재귀 함수 작성하기
+- 보통 꼬리 재귀 함수가 덜 직관적
+- 그러나 이런 식으로 작성된 코드가 종종 보임
+- 가장 큰 이유는 앞에서 말했던 최적화
