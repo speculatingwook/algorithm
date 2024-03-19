@@ -6,3 +6,15 @@
 - 한 번 목록을 순회할 때마다 가장 큰 값이 제일 위로 올라감
 	- 기포가 수면으로 떠오르는 모습을 닮았다고 해서 버블 정렬
 	- 큰 기포일수록 수면으로 더 빨리 떠오름
+
+
+```java
+public static void bubbleSort(int[] nums){
+	for(int i =0; i< nums.length - 1; i++){
+		for(int j =0; j < nums.length -1 - i; j++ ){
+		
+		}
+	}
+
+}
+```
