@@ -33,6 +33,7 @@ $O(log n)$
 	- 따라서 decrease-and-conquer라고 부르자는 소수설도 있음
 - 재귀함수로 쉽게 작성 가능
 
+- JAVA
 ```java
 public static int binarySearchRecursive(int nums[], int l, int r, int value){
 	if(l>r){
@@ -52,6 +53,23 @@ public static int binarySearchRecursive(int nums[], int l, int r, int value){
 }
 ```
 
+- C
+```c
+int search(int a[], int n, int x){
+	int l, r, m;
+	l=0; r=n-1;
+	while (l<=r){
+		m = (l+r) / 2
+		if(a[m] < x)
+			l = m + 1;
+		else if (a[m] < x)
+			r = m-1;
+		else // same
+			return m;
+	}
+	return -1;
+}
+```
 
 ## 정렬된 데이터와 알고리즘
 - 정렬된 데이터에 사용할 수 있는 효율적인 알고리즘들이 많음
