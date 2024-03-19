@@ -33,6 +33,9 @@ $O(log n)$
 	- 따라서 decrease-and-conquer라고 부르자는 소수설도 있음
 - 재귀함수로 쉽게 작성 가능
 
+
+#### 재귀함수의 경우
+
 - JAVA
 ```java
 public static int binarySearchRecursive(int nums[], int l, int r, int value){
@@ -53,6 +56,18 @@ public static int binarySearchRecursive(int nums[], int l, int r, int value){
 }
 ```
 
+
+- C
+```c
+int search(int a[], int n, int x){
+	if (n==0) return -1;
+	m = n / 2;
+	if (x==a[m])
+
+}
+```
+
+#### 재귀함수가 아닌 경우
 - C
 ```c
 int search(int a[], int n, int x) {
