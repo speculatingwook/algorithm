@@ -8,3 +8,20 @@
 	- 이 과정을 재귀적으로 반복
 	- 재귀 단계가 깊어질 때마다 새로운 pivot 값을 뽑음
 
+
+```java
+public static void quickSort(int[] nums){
+	quickSortRecursive(nums, 0, nums.length - 1);
+}
+
+public static quickSortRecursive(int[] nums, int left, int right) {
+	if (left >= right) {
+		return;
+	}
+	
+	int pivotPos = partition(nums, left, right);
+	
+	qickSortRecursive(nums, left, pivotPos - 1);
+	quickSortRecursive(nums, pivotPos + 1, right);
+}
+```
