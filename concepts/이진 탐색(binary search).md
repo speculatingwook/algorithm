@@ -9,11 +9,11 @@
 
 
 3. 다시 가운데 위치를 확인
-![[binary_search_3.png]]
+![](/images/binary_search_3.png)
 
 
 4. 비교 후 다시 정함
-![[binary_search_4.png]]
+![](/images/binary_search_4.png)
 
 
 
@@ -68,7 +68,7 @@ public static int binarySearchRecursive(int nums[], int l, int r, int value){
 
 ## 정렬 후 이진탐색 vs 선형 탐색
 
-![[binary_search_5.png]]
+![](/images/binary_search_5.png)
 
 
 
