@@ -59,7 +59,9 @@ public static int binarySearchRecursive(int nums[], int l, int r, int value){
 - C
 ```c
 /*
-	- n = l - r
+	- `a[]`: 정렬된 배열
+	- `n`: 배열의 크기
+	- `x`: 찾고자 하는 값
 */
 int search(int a[], int n, int x){
 	if (n==0) return -1;
@@ -73,7 +75,7 @@ int search(int a[], int n, int x){
 	}
 }
 
-// 
+// C 스타일의 수도 코드
 int search(int a[], int n, int x){
 	if (n == 0) return -1;
 	m = n / 2;
