@@ -28,7 +28,8 @@ public static quickSortRecursive(int[] nums, int left, int right) {
 public static int partition(int[] nums, int left, int right) {
 	int pivot = nums[right];
 	
-	int i = (left - 1);
+	// 혹시라도 swap()이 한번도 안일어나면 left 위치로 기준값을 옮기기 위해 1 감소
+	int i = (left - 1); 
 	for(int j = left; j < right; ++j){
 		if(nums[j] < pivot) {
 			++i;
