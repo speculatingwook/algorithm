@@ -17,9 +17,8 @@ public static void selectionSort(int[] nums){
 }
 
 private static int findMinIndex(int[] nums){
-	int min = 
 	for(int i=0; i < nums.length; i++){
-		
+		for(int j = 0; j< nums.length)
 	}
 }
 ```
