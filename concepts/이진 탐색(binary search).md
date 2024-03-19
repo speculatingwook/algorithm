@@ -36,7 +36,7 @@ $O(log n)$
 - JAVA
 ```java
 public static int binarySearchRecursive(int nums[], int l, int r, int value){
-	if(l>r){
+	if(l > r){
 		return -1;
 	}
 	int m = (l + r) / 2;
@@ -55,20 +55,25 @@ public static int binarySearchRecursive(int nums[], int l, int r, int value){
 
 - C
 ```c
-int search(int a[], int n, int x){
+int search(int a[], int n, int x) {
 	int l, r, m;
-	l=0; r=n-1;
-	while (l<=r){
-		m = (l+r) / 2
+	l = 0; r = n - 1;
+	while (l <= r) {
+		m = (l + r) / 2
 		if(a[m] < x)
 			l = m + 1;
 		else if (a[m] < x)
-			r = m-1;
+			r = m - 1;
 		else // same
 			return m;
 	}
 	return -1;
 }
+
+/* 
+- r-l 이 계속 줄어든다.
+- 그러므로 프로그램은 끝난다.
+*/
 ```
 
 ## 정렬된 데이터와 알고리즘
@@ -127,3 +132,4 @@ public class Program{
 	}
 }
 ```
+
