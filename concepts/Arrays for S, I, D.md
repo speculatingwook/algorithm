@@ -3,3 +3,19 @@
 - 모든 자료구조에 해당하지는 않음
 - Item: 저장되는 대상을 부를 이름
 
+
+
+
+## How to Store Items in an Array?
+
+### Packed vs Unpacked
+- 배열이 항상 가득 찬 것은 아님
+- 빈 자리를 한 쪽으로 모은다?
+### Sorted vs Unsorted
+- Item들이 정렬된 상태를 유지하느냐 아니냐
+
+
+
+## Packed, Unsorted
+- 아마도 가장 간단한 방법
+- Item의 개수를 표시하는 변수가 따로 필요
