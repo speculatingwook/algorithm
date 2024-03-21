@@ -18,3 +18,47 @@
 	- 각 재귀 단계마다 방문하는 요소 수는 $O(N)$
 3. 제일 상위 단계까지 합치면 정렬 끝
 
+
+```java
+public class MergeSort {
+    public static void mergeSort(int[] array) {
+        if (array == null) {
+            return;
+        }
+        if (array.length > 1) {
+            int mid = array.length / 2;
+            int[] leftArray = new int[mid];
+            int[] rightArray = new int[array.length - mid];
+
+            System.arraycopy(array, 0, leftArray, 0, mid);
+            System.arraycopy(array, mid, rightArray, 0, array.length - mid);
+
+            mergeSort(leftArray);
+            mergeSort(rightArray);
+
+            merge(array, leftArray, rightArray);
+        }
+    }
+
+    public static void merge(int[] array, int[] leftArray, int[] rightArray) {
+        int leftIndex = 0, rightIndex = 0, mergedIndex = 0;
+
+        while (leftIndex < leftArray.length && rightIndex < rightArray.length) {
+            if (leftArray[leftIndex] < rightArray[rightIndex]) {
+                array[mergedIndex++] = leftArray[leftIndex++];
+            } else {
+                array[mergedIndex++] = rightArray[rightIndex++];
+            }
+        }
+
+        while (leftIndex < leftArray.length) {
+            array[mergedIndex++] = leftArray[leftIndex++];
+        }
+
+        while (rightIndex < rightArray.length) {
+            array[mergedIndex++] = rightArray[rightIndex++];
+        }
+    }
+
+```
+
