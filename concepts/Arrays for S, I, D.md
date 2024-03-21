@@ -42,10 +42,19 @@
 
 ## Unpacked, Unsorted
 - 빈 자리들이 흩어져 있음
-- Item 병오 사용 중인지 아닌지 표시 필요
+- Item 별로 사용 중인지 아닌지 표시 필요
 
 ### Unpacked, Unsorted 성능
-- Search: $O(N)$
+- Search: $O(N)$ -> 기술 추가 -> $O(log N)$
 - Insert: (Search, $O(N)$), $O(N)$ -> 기술 추가 -> $(O(1))$
 - Delete:(Search, $O(N)$), $O(1)$
 
+
+## Unpacked, Sorted
+- 빈 자리들이 흩어져 있음
+- Item 병오 사용 중인지 아닌지 표시 필요
+
+### Unpacked, Sorted 성능
+- Search: $O(N)$ -> 기술 추가 -> $O(log N)$
+- Insert: (Search, $O(N)$), $O(N)$ -> 기술 추가 -> $(O(1))$
+- Delete:(Search, $O(N)$), $O(1)$
