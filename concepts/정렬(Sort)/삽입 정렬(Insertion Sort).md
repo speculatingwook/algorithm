@@ -7,5 +7,17 @@
 	- 삽입으로 인해 다른 요소들을 오른쪽으로 밀어야(shift)할 수도 있음
 
 ```java
-
+public static int[] insertionSort(int[] nums){
+	for(int i =0; i< nums.length; i ++){
+		int curr 
+		if(nums[i]<nums[i+1]){
+			int temp = nums[i];
+			nums[i] = nums[i+1];
+			nums[i+1] = temp;
+		}
+		while(nums[i]<nums[i+1]){
+			
+		}
+	}
+}
 ```
