@@ -8,15 +8,12 @@
 
 ```java
 public static int[] insertionSort(int[] nums){
-	for(int i =0; i< nums.length; i ++){
-		int curr 
-		if(nums[i]<nums[i+1]){
-			int temp = nums[i];
-			nums[i] = nums[i+1];
-			nums[i+1] = temp;
-		}
-		while(nums[i]<nums[i+1]){
-			
+	for(int i = 1; i< nums.length; i ++){
+		int cur = 0;
+		while(nums[cur] > nums[cur + 1]){
+			int temp = nums[cur];
+			nums[cur] = nums[cur + 1];
+			nums[cur + 1] = temp;
 		}
 	}
 }
