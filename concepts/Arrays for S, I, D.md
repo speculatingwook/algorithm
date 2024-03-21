@@ -15,6 +15,9 @@
 - Item들이 정렬된 상태를 유지하느냐 아니냐
 
 
+
+
+
 ## Packed, Unsorted
 - 아마도 가장 간단한 방법
 - Item의 개수를 표시하는 변수가 따로 필요
@@ -51,10 +54,10 @@
 
 
 ## Unpacked, Sorted
-- 빈 자리들이 흩어져 있음
-- Item 병오 사용 중인지 아닌지 표시 필요
+
 
 ### Unpacked, Sorted 성능
 - Search: $O(N)$ -> 기술 추가 -> $O(log N)$
-- Insert: (Search, $O(N)$), $O(N)$ -> 기술 추가 -> $(O(1))$
+- Insert: (Search, $O(N)$), $O(N)$ 
 - Delete:(Search, $O(N)$), $O(1)$
+
