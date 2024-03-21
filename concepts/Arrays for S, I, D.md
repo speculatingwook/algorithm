@@ -30,3 +30,11 @@
 
 
 ## Packed, Sorted
+- Binary Search
+
+
+### Packed, Sorted 성능
+
+- Search: $O(log N)$
+- Insert: (Search, $O(log N)$), $O(N)$
+- Delete: (Search, $O(log N)$), $O(N)$
