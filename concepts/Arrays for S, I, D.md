@@ -19,3 +19,14 @@
 ## Packed, Unsorted
 - 아마도 가장 간단한 방법
 - Item의 개수를 표시하는 변수가 따로 필요
+
+
+### Packed, UnSorted 성능
+- Search: $O(N)$
+- Insert: (Search, $O(N)$), $O(1)$
+- Delete:(Search, $O(N)$), $O(1)$
+
+	- Insert와 Delete는 보통 Search를 먼저 수행
+
+
+## Packed, Sorted
