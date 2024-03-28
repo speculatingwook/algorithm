@@ -14,7 +14,8 @@ int naivematch(char T[], int n, char P[], int m, int output[]){
 	int i, j, k, kk;
 	for(i=0; i<n; i++){
 		for(j =0; j<m; j++){
-			if(T[i+j] == P[j]) output[i+j] = max(output[i+j], k+1)
+			if(T[i+j] == P[j]) output[i+j] = max(output[i+j], j+1);
+			else break;
 		}
 	}
 }
