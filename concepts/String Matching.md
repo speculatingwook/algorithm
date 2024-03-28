@@ -63,6 +63,18 @@ DFA는 정규 표현식, 컴파일러, 텍스트 편집기, 네트워크 프로�
 DFA는 문자열 패턴 매칭 문제를 효율적으로 해결할 수 있는 강력한 도구입니다. 그러나 모든 정규 언어를 인식할 수 있는 것은 아니며, 더 복잡한 패턴을 인식하기 위해서는 NFA(Non-deterministic Finite Automaton)와 같은 다른 유한 오토마타를 사용해야 합니다.
 
 
+```c
+int Table[4][8] = {{1, 1, 1, 4, 1, 1, 4, 1}, ...};
+
+int DFAmatch(char T[], int n, int output[]){
+	int i, s;
+	s= 0;
+	for(i =0; i<n; i++){
+		output[i] = s = Table[T[i] = 'a'][s];
+	}
+}
+```
+
 ## KMP(Knuth-Morris-Pratt)
 
 KMP(Knuth-Morris-Pratt) 알고리즘은 문자열 매칭에 사용되는 효율적인 알고리즘입니다. 주어진 문자열에서 특정 패턴을 찾는 데 사용됩니다.
