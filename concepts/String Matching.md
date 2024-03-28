@@ -28,3 +28,63 @@ KMP의 시간 복잡도는 O(m+n)으로 상대적으로 효율적입니다. 여�
 패턴 매칭에 Brute-Force 방식을 사용하면 O(mn)의 시간 복잡도를 가지므로, KMP가 더 효율적입니다.
 
 
+```c
+#include <stdio.h>
+#include <string.h>
+
+void computeLPSArray(char *pat, int m, int *lps) {
+    int len = 0;
+    lps[0] = 0; // lps[0] is always 0
+
+    int i = 1;
+    while (i < m) {
+        if (pat[i] == pat[len]) {
+            len++;
+            lps[i] = len;
+            i++;
+        } else {
+            if (len != 0) {
+                len = lps[len - 1];
+            } else {
+                lps[i] = 0;
+                i++;
+            }
+        }
+    }
+}
+
+void KMPSearch(char *pat, char *txt) {
+    int m = strlen(pat);
+    int n = strlen(txt);
+
+    int lps[m];
+
+    computeLPSArray(pat, m, lps);
+
+    int i = 0;  // index for txt[]
+    int j = 0;  // index for pat[]
+    while (i < n) {
+        if (pat[j] == txt[i]) {
+            j++;
+            i++;
+        }
+
+        if (j == m) {
+            printf("Pattern found at index %d\n", i - j);
+            j = lps[j - 1];
+        } else if (i < n && pat[j] != txt[i]) {
+            if (j != 0)
+                j = lps[j - 1];
+            else
+                i = i + 1;
+        }
+    }
+}
+
+int main() {
+    char txt[] = "ABABCABCABCAB";
+    char pat[] = "ABCAB";
+    KMPSearch(pat, txt);
+    return 0;
+}
+```
