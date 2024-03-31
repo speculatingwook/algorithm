@@ -49,3 +49,7 @@ int search(int a[], int n, int x){
 }
 ```
 
+
+
+# 성능 vs 가독성
+- 프로그래머가 판단을
