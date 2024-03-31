@@ -17,11 +17,30 @@ int search(int a[], int n, int x){
 	int i;
 	for (i=0; i<n; i++)
 		if (a[i] == x) return i;
-	return i;
+	return -1;
 }
 ```
 
 
 ```c
-int search(int a[], int n, int )
+int search(int a[], int n, int x){
+	int i;
+	for(i=0; i<n; i++)
+		if(*(a+i) == x) return i;
+	return -1;
+}
+```
+
+## Binary Search
+```c
+int search(int a[], int n, int x){
+	int l, r, m;
+	l=0; r = n-1;
+	while (l<=r){
+		m = (l + r) / 2;
+		if (a[m] < x)
+			l = m+1;
+		le
+	}
+}
 ```
