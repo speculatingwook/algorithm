@@ -40,7 +40,12 @@ int search(int a[], int n, int x){
 		m = (l + r) / 2;
 		if (a[m] < x)
 			l = m+1;
-		le
+		else if (a[m] > x)
+			r = m-1;
+		else
+			return m;
 	}
+	return -1;
 }
 ```
+
