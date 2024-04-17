@@ -13,14 +13,14 @@
 ## 대표적인 탐색 알고리즘
 
 ### 선형 탐색 알고리즘
-![](/images/linear_search_algorithm_image.png)
+![](/docs/images/linear_search_algorithm_image.png)
 ### 해시 맵을 이용한 탐색
 
-![](/images/hashmap_search_algorithm_image.png)
+![](/docs/images/hashmap_search_algorithm_image.png)
 
 
 ## 선형 탐색 vs 해시 맵을 이용한 탐색
-![](/images/linear_hashmap_compare_image.png)
+![](/docs/images/linear_hashmap_compare_image.png)
 
 - 보통은 데이터 양이 많아지면 탐색 속도가 빨라짐
 - 하지만 같은 용량이라도 탐색 속도를 빠르게 할 수 있는 경우가 있음

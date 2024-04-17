@@ -2,18 +2,18 @@
 ## 작동 방법
 
 1. 가운데 위치를 확인
- ![](/images/binary_search_1.png)
+ ![](/docs/images/binary_search_1.png)
 
  2. 가운데 값과 찾으려는 값을 비교
-![](/images/binary_search_2.png)
+![](/docs/images/binary_search_2.png)
 
 
 3. 다시 가운데 위치를 확인
-![](/images/binary_search_3.png)
+![](/docs/images/binary_search_3.png)
 
 
 4. 비교 후 다시 정함
-![](/images/binary_search_4.png)
+![](/docs/images/binary_search_4.png)
 
 
 
@@ -126,7 +126,7 @@ int search(int a[], int n, int x) {
 
 ## 정렬 후 이진탐색 vs 선형 탐색
 
-![](/images/binary_search_5.png)
+![](/docs/images/binary_search_5.png)
 
 
 
