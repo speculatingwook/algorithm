@@ -3,5 +3,5 @@ project(algorithm)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(algorithm main.cpp
+add_executable(algorithm main.c
         src/implementation/SingleLinkedList/SingleListSample.c)

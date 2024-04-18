@@ -49,9 +49,9 @@ cmake_ninja_workdir = /Users/yoonbeongwook/Documents/study_document/algorithm/cm
 
 build cmake_object_order_depends_target_algorithm: phony || CMakeFiles/algorithm.dir
 
-build CMakeFiles/algorithm.dir/main.cpp.o: CXX_COMPILER__algorithm_unscanned_Debug /Users/yoonbeongwook/Documents/study_document/algorithm/main.cpp || cmake_object_order_depends_target_algorithm
-  DEP_FILE = CMakeFiles/algorithm.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+build CMakeFiles/algorithm.dir/main.c.o: C_COMPILER__algorithm_unscanned_Debug /Users/yoonbeongwook/Documents/study_document/algorithm/main.c || cmake_object_order_depends_target_algorithm
+  DEP_FILE = CMakeFiles/algorithm.dir/main.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithm.dir
 
@@ -69,7 +69,7 @@ build CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSam
 #############################################
 # Link the executable algorithm
 
-build algorithm: CXX_EXECUTABLE_LINKER__algorithm_Debug CMakeFiles/algorithm.dir/main.cpp.o CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSample.c.o
+build algorithm: C_EXECUTABLE_LINKER__algorithm_Debug CMakeFiles/algorithm.dir/main.c.o CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSample.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/algorithm.dir
   POST_BUILD = :
