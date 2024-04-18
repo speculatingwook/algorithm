@@ -16,6 +16,7 @@ int SingleList()
 {
     NODE list[5] = { 0 };
 
+    // 값 초기화
     list[0].nData = 100;
     list[1].nData = 200;
     list[2].nData = 300;
