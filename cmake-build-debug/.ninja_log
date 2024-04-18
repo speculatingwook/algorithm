@@ -1,7 +1,6 @@
 # ninja log v5
-3	282	1713439363732986355	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSample.c.o	4757f35b46b6e8f0
-0	71	1713440569446724926	build.ninja	95a235b2469fe5eb
-0	193	1713439100550452844	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
-0	123	1713440556605912481	algorithm	2775bd387eb3d9a8
 2	688	1713439011503662327	CMakeFiles/algorithm.dir/main.cpp.o	9627864829f7016
-0	128	1713440572146336981	algorithm	ca5f132bc3cf135
+0	600	1713440608326485944	algorithm	b3c2d2a119aeedac
+0	193	1713439100550452844	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
+0	193	1713440613181241334	build.ninja	95a235b2469fe5eb
+3	282	1713439363732986355	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSample.c.o	4757f35b46b6e8f0
