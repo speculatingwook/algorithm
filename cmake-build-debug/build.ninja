@@ -55,6 +55,12 @@ build CMakeFiles/algorithm.dir/main.cpp.o: CXX_COMPILER__algorithm_unscanned_Deb
   OBJECT_DIR = CMakeFiles/algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithm.dir
 
+build CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSample.c.o: C_COMPILER__algorithm_unscanned_Debug /Users/yoonbeongwook/Documents/study_document/algorithm/src/implementation/SingleLinkedList/SingleListSample.c || cmake_object_order_depends_target_algorithm
+  DEP_FILE = CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSample.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/algorithm.dir
+  OBJECT_FILE_DIR = CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target algorithm
@@ -63,7 +69,7 @@ build CMakeFiles/algorithm.dir/main.cpp.o: CXX_COMPILER__algorithm_unscanned_Deb
 #############################################
 # Link the executable algorithm
 
-build algorithm: CXX_EXECUTABLE_LINKER__algorithm_Debug CMakeFiles/algorithm.dir/main.cpp.o
+build algorithm: CXX_EXECUTABLE_LINKER__algorithm_Debug CMakeFiles/algorithm.dir/main.cpp.o CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSample.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/algorithm.dir
   POST_BUILD = :
