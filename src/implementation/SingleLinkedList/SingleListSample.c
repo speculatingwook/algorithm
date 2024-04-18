@@ -31,5 +31,11 @@ int SingleList()
     for(int i = 0; i < 5; ++i)
         printf("list[%d]: %d\n", i, list[i].nData);
 
+    NODE* pTmp = &list[0];
+    while(pTmp != NULL) {
+        printf("%p: %d\n", pTmp, pTmp -> nData);
+        pTmp = pTmp -> next;
+    }
+
     return 0;
 }
