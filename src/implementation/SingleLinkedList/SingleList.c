@@ -1,7 +1,9 @@
 //
 // Created by Yoon BeongWook on 4/19/24.
 //
-#include "stdio.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 typedef struct NODE
 {
@@ -18,6 +20,16 @@ void printList(void){
         printf("[%p] %s, next[%p]", g_pHead, g_pHead -> szData, g_pHead -> next);
         g_pHead = g_pHead -> next;
     }
+}
+
+int InsertNewNode(char* pszData)
+{
+    NODE* pNode = (NODE*)malloc(sizeof(NODE));
+    memset(pNode, 0, sizeof(NODE));
+
+    strcpy(pNode-> szData, pszData);
+    
+    return 1;
 }
 
 int SingleList(){
