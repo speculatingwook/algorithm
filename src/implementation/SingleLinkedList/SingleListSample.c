@@ -12,7 +12,7 @@ typedef struct NODE {
     struct NODE* next;
 } NODE;
 
-int SingleList()
+int SingleListSample()
 {
     NODE list[5] = { 0 };
 
