@@ -26,9 +26,16 @@ int InsertNewNode(char* pszData)
 {
     NODE* pNode = (NODE*)malloc(sizeof(NODE));
     memset(pNode, 0, sizeof(NODE));
-
     strcpy(pNode-> szData, pszData);
-    
+
+    if(g_pHead == NULL)
+        g_pHead = pNode;
+    else {
+        pNode -> next = g_pHead;
+    }
+
+
+
     return 1;
 }
 
