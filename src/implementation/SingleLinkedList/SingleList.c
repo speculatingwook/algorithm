@@ -12,7 +12,14 @@ typedef struct NODE
     struct NODE* next;
 } NODE;
 
-NODE* g_pHead = NULL;
+NODE* g_pHead = { 0 };
+
+int IsEmpty()
+{
+    if (g_pHead->next == NULL)
+        return 1;
+    return 0;
+}
 
 // 연결 리스트 전체 데이터 출력
 void printList(void){
