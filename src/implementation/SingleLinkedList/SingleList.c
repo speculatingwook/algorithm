@@ -58,10 +58,17 @@ void ReleaseList(void)
 int FindData(char* pszData)
 {
     NODE* pTmp = g_pHead;
+    NODE* pPrev = NULL;
     while(pTmp != NULL)
     {
         if(strcmp(pTmp -> szData, pszData) == 0)
+        {
+            //삭제
+            printf("DeleteData(): %s\n", pTmp->szData);
+            pPrev -> next = pTmp -> next;
             return 1;
+        }
+        pPrev = pTmp;
         pTmp = pTmp -> next;
     }
 
