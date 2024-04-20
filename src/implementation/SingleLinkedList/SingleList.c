@@ -58,6 +58,7 @@ int InsertAtTail(char* pszData)
     strncpy(pNode->szData, pszData, sizeof(pNode->szData));
 
     pTmp->next = pNode;
+    return 1;
 }
 
 void ReleaseList(void)
