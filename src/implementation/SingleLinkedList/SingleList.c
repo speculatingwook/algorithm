@@ -35,7 +35,7 @@ int InsertNewNode(char* pszData)
     else { // 연결리스트가 존재하는 경우
         // 새로 생성한 노드의 next(가리키는 주소)를 기존의 노드로 설정
         pNode -> next = g_pHead;
-        // 기존 데이터 overwrite
+        // 새로 생성한 노드를 헤드 노드로 설정
         g_pHead = pNode;
     }
 
