@@ -65,7 +65,13 @@ int FindData(char* pszData)
         {
             //삭제
             printf("DeleteData(): %s\n", pTmp->szData);
-            pPrev -> next = pTmp -> next;
+            if(pPrev != NULL)
+                pPrev-> next = pTmp -> next;
+            else
+            {
+                // 삭제할 데이터가 첫번째
+                g_pHead = pTmp -> next;
+            }
             return 1;
         }
         pPrev = pTmp;
