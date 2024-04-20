@@ -16,10 +16,10 @@ NODE* g_pHead = NULL;
 
 // 연결 리스트 전체 데이터 출력
 void printList(void){
-
-    while(g_pHead != NULL){
-        printf("[%p] %s, next[%p]", g_pHead, g_pHead -> szData, g_pHead -> next);
-        g_pHead = g_pHead -> next;
+    NODE* pHead = g_pHead;
+    while(pHead != NULL){
+        printf("[%p] %s, next[%p]\n", pHead, pHead -> szData, pHead -> next);
+        pHead = pHead -> next;
     }
 }
 
@@ -41,6 +41,10 @@ int InsertNewNode(char* pszData)
 }
 
 int SingleList(){
-
+    // List 테스트를 위한 코드
+    InsertNewNode("TEST01");
+    InsertNewNode("TEST02");
+    InsertNewNode("TEST03");
+    printList();
     return 0;
 }
