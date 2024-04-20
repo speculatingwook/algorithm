@@ -48,6 +48,9 @@ void ReleaseList(void)
     while(pTmp != NULL) {
         NODE* pDelete = pTmp;
         pTmp = pTmp -> next;
+
+        printf("Delete: [%p] %s\n", pDelete, pDelete->szData);
+        free(pDelete);
     }
 }
 
@@ -57,5 +60,6 @@ int SingleList(){
     InsertNewNode("TEST02");
     InsertNewNode("TEST03");
     printList();
+    ReleaseList();
     return 0;
 }
