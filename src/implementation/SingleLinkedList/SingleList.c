@@ -29,10 +29,13 @@ int InsertNewNode(char* pszData)
     memset(pNode, 0, sizeof(NODE));
     strncpy(pNode-> szData, pszData, sizeof(pNode -> szData));
 
-    if(g_pHead == NULL)
+
+    if(g_pHead == NULL) // 헤드 노드가 NULL인 경우 = 연결 리스트가 존재하지 않을 경우
         g_pHead = pNode;
-    else {
+    else { // 연결리스트가 존재하는 경우
+        // 새로 생성한 노드의 next(가리키는 주소)를 기존의 노드로 설정
         pNode -> next = g_pHead;
+        // 기존 데이터 overwrite
         g_pHead = pNode;
     }
 
