@@ -42,7 +42,14 @@ int InsertNewNode(char* pszData)
     return 1;
 }
 
-
+void ReleaseList(void)
+{
+    NODE *pTmp = g_pHead;
+    while(pTmp != NULL) {
+        NODE* pDelete = pTmp;
+        pTmp = pTmp -> next;
+    }
+}
 
 int SingleList(){
     // List 테스트를 위한 코드
