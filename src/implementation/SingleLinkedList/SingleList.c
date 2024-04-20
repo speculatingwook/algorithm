@@ -71,6 +71,7 @@ int FindData(char* pszData)
             {
                 // 삭제할 데이터가 첫번째
                 g_pHead = pTmp -> next;
+                free(pTmp);
             }
             return 1;
         }
