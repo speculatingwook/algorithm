@@ -18,8 +18,8 @@ NODE* g_pHead = NULL;
 void printList(void){
     NODE* pHead = g_pHead;
     while(pHead != NULL){
-        printf("[%p] %s, next[%p]\n", pHead, pHead -> szData, pHead -> next);
-        pHead = pHead -> next;
+        printf("[%p] %s, next[%p]\n", pHead, pHead->szData, pHead->next);
+        pHead = pHead->next;
     }
 }
 
@@ -34,8 +34,6 @@ int InsertNewNode(char* pszData)
     else {
         pNode -> next = g_pHead;
     }
-
-
 
     return 1;
 }
