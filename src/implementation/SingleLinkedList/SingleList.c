@@ -22,7 +22,7 @@ void printList(void){
         pHead = pHead->next;
     }
 }
-
+// 새로운 노드 삽입
 int InsertNewNode(char* pszData)
 {
     NODE* pNode = (NODE*)malloc(sizeof(NODE));
@@ -41,6 +41,8 @@ int InsertNewNode(char* pszData)
 
     return 1;
 }
+
+
 
 int SingleList(){
     // List 테스트를 위한 코드
