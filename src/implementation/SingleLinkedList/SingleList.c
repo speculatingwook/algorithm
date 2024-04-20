@@ -30,23 +30,34 @@ void printList(void){
     }
 }
 // 새로운 노드 삽입
-int InsertNewNode(char* pszData)
+int InsertAtHead(char* pszData)
 {
     NODE* pNode = (NODE*)malloc(sizeof(NODE));
     memset(pNode, 0, sizeof(NODE));
     strncpy(pNode-> szData, pszData, sizeof(pNode -> szData));
 
-
-    if(g_pHead == NULL) // 헤드 노드가 NULL인 경우 = 연결 리스트가 존재하지 않을 경우
-        g_pHead = pNode;
-    else { // 연결리스트가 존재하는 경우
-        // 새로 생성한 노드의 next(가리키는 주소)를 기존의 노드로 설정
-        pNode -> next = g_pHead;
-        // 새로 생성한 노드를 헤드 노드로 설정
-        g_pHead = pNode;
+    if(IsEmpty())
+        g_pHead->next = pNode;
+    else
+    {
+        pNode ->next = g_pHead->next;
+        g_pHead->next = pNode;
     }
-
     return 1;
+}
+
+int InsertAtTail(char* pszData)
+{
+    // 마지막 노드를 찾는다.
+    NODE* pTmp = &g_pHead;
+    while (pTmp -> next !=0)
+        pTmp = pTmp -> next;
+
+    NODE* pNode = (NODE*)malloc(sizeof(NODE));
+    memset(pNode, 0, sizeof(NODE));
+    strncpy(pNode->szData, pszData, sizeof(pNode->szData));
+
+    pTmp->next = pNode;
 }
 
 void ReleaseList(void)
