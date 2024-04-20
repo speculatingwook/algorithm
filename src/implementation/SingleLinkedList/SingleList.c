@@ -54,12 +54,28 @@ void ReleaseList(void)
     }
 }
 
+// 데이터 조회
+int FindData(char* pszData)
+{
+    NODE* pTmp = g_pHead;
+    while(pTmp != NULL)
+    {
+        if(strcmp(pTmp -> szData, pszData) == 0)
+            return 1;
+        pTmp = pTmp -> next;
+    }
+
+    return 0;
+}
+
 int SingleList(){
     // List 테스트를 위한 코드
     InsertNewNode("TEST01");
     InsertNewNode("TEST02");
     InsertNewNode("TEST03");
     printList();
+    if(FindData("TEST01") == 1)
+        printf("FindData(): TEST01 found\n");
     ReleaseList();
     return 0;
 }
