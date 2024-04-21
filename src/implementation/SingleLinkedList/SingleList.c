@@ -63,7 +63,8 @@ int InsertAtTail(char* pszData)
 
 void ReleaseList(void)
 {
-    NODE *pTmp = g_pHead;
+    printf("\nReleaseList()\n");
+    NODE* pTmp = g_pHead->next;
     while(pTmp != NULL) {
         NODE* pDelete = pTmp;
         pTmp = pTmp -> next;
