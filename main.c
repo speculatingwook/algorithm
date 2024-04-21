@@ -1,8 +1,8 @@
 
 #include "stdio.h"
 
-int SingleListSample();
-int SingleList();
+//int SingleListSample();
+//int SingleList();
 int Stack();
 
 int main() {

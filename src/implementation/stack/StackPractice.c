@@ -50,7 +50,7 @@ int PushData(char* pszData)
     memset(pNode, 0, sizeof(NODE));
     strncpy(pNode-> szData, pszData, sizeof(pNode -> szData));
 
-    if(IsStackEmpty() == 1)
+    if(IsStackEmpty())
         stack_head->next = pNode;
     else
     {
@@ -74,19 +74,19 @@ int PopData(NODE* pPopNode)
 
 
 int Stack(){
-    printf("stack");
     //Stack 테스트를 위한 코드
-//    PushData("TEST01");
-//    PushData("TEST02");
-//    PushData("TEST03");
-    NODE node = {0};
-    PopData(&node);
-    printf("Pop: %s\n", node.szData);
-
-    PopData(&node);
-    printf("Pop: %s\n", node.szData);
-
-    PopData(&node);
-    printf("Pop: %s\n", node.szData);
+    printf("stack");
+    PushData("TEST01");
+    PushData("TEST02");
+    PushData("TEST03");
+//    NODE node = {0};
+//    PopData(&node);
+//    printf("Pop: %s\n", node.szData);
+//
+//    PopData(&node);
+//    printf("Pop: %s\n", node.szData);
+//
+//    PopData(&node);
+//    printf("Pop: %s\n", node.szData);
     return 0;
 }

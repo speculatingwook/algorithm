@@ -24,3 +24,15 @@
 287	417	1713680446885979410	algorithm	6678454ac0a03bbe
 0	212	1713680489748911897	CMakeFiles/algorithm.dir/src/implementation/stack/StackPractice.c.o	9d0d9a8724fa137f
 212	328	1713680489862004947	algorithm	6678454ac0a03bbe
+0	357	1713680539058959012	CMakeFiles/algorithm.dir/src/implementation/stack/StackPractice.c.o	9d0d9a8724fa137f
+357	484	1713680539185550814	algorithm	6678454ac0a03bbe
+1	223	1713680614288056102	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSample.c.o	4757f35b46b6e8f0
+1	223	1713680614288055935	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleList.c.o	d52b177b538da9b6
+0	249	1713680614320760746	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
+249	374	1713680614445321450	algorithm	6678454ac0a03bbe
+1	284	1713680724157608621	CMakeFiles/algorithm.dir/src/implementation/stack/StackPractice.c.o	9d0d9a8724fa137f
+285	415	1713680724287621390	algorithm	6678454ac0a03bbe
+1	309	1713680779562017726	CMakeFiles/algorithm.dir/src/implementation/stack/StackPractice.c.o	9d0d9a8724fa137f
+309	488	1713680779734173278	algorithm	6678454ac0a03bbe
+1	159	1713680793520417415	CMakeFiles/algorithm.dir/src/implementation/stack/StackPractice.c.o	9d0d9a8724fa137f
+159	273	1713680793637764904	algorithm	6678454ac0a03bbe
