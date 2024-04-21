@@ -52,7 +52,10 @@ int PushData(char* pszData)
     strncpy(pNode-> szData, pszData, sizeof(pNode -> szData));
 
     if(IsStackEmpty())
-        stack_head->next = pNode;
+    {
+        stack_head = pNode;
+        pNode->next = NULL;
+    }
     else
     {
         pNode ->next = stack_head->next;
