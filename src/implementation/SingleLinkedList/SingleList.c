@@ -106,12 +106,12 @@ int DeleteData(char* pszData)
     return 0;
 }
 
-
-int SingleList(){
-    // List 테스트를 위한 코드
-    InsertAtHead("TEST01");
-    InsertAtHead("TEST02");
-    InsertAtHead("TEST03");
-    printList();
-    return 0;
-}
+//
+//int SingleList(){
+//    // List 테스트를 위한 코드
+//    InsertAtHead("TEST01");
+//    InsertAtHead("TEST02");
+//    InsertAtHead("TEST03");
+//    printList();
+//    return 0;
+//}

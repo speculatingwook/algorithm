@@ -8,6 +8,5 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(algorithm main.c
         src/implementation/SingleLinkedList/SingleListSample.c
         src/implementation/SingleLinkedList/SingleList.c
-        src/implementation/stack/Stack.c
+        src/implementation/stack/StackPractice.c
 )
-
