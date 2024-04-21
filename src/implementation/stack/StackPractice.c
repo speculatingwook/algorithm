@@ -12,12 +12,12 @@ typedef struct NODE
     struct NODE* next;
 } NODE;
 
-NODE* stack_head = NULL;
+NODE* stack_head = {0};
 
 
 int IsStackEmpty()
 {
-    if (stack_head == NULL ||stack_head->next == NULL)
+    if (stack_head->next == NULL)
         return 1;
     return 0;
 }
@@ -52,10 +52,7 @@ int PushData(char* pszData)
     strncpy(pNode-> szData, pszData, sizeof(pNode -> szData));
 
     if(IsStackEmpty())
-    {
-        stack_head = pNode;
-        pNode->next = NULL;
-    }
+        stack_head->next = pNode;
     else
     {
         pNode ->next = stack_head->next;

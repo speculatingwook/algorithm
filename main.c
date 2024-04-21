@@ -6,7 +6,6 @@
 int Stack();
 
 int main() {
-    printf("test");
     Stack();
 //    SingleListSample();
 //    SingleList();
