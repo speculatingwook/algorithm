@@ -12,6 +12,7 @@ typedef struct NODE {
 } NODE;
 
 NODE* p_queue_head = NULL;
+NODE* g_pTail = 0;
 
 int IsQueueEmpty() {
     return (p_queue_head == NULL || p_queue_head->next == NULL);
@@ -44,10 +45,14 @@ int Enqueue(char* pszData)
     memset(pNode, 0, sizeof(NODE));
     strncpy(pNode->szData, pszData, sizeof(pNode->szData));
 
-    if (p_queue_head == NULL) {
+    if (p_queue_head == NULL)
+    {
         p_queue_head = (NODE*)malloc(sizeof(NODE));
         memset(p_queue_head, 0, sizeof(NODE));
+
+        // 리스트에 추가된 첫번째 데이터 처리
         p_queue_head->next = pNode;
+        g_pTail = pNode;
     } else {
         pNode->next = p_queue_head->next;
         p_queue_head->next = pNode;
