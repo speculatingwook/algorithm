@@ -1,12 +1,9 @@
 # ninja log v5
 2	688	1713439011503662327	CMakeFiles/algorithm.dir/main.cpp.o	9627864829f7016
-0	193	1713678800003053898	build.ninja	95a235b2469fe5eb
-0	302	1713596821356976911	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSample.c.o	4757f35b46b6e8f0
-0	303	1713596821357009035	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
-260	379	1713604338327432660	algorithm	ccb4e2dbac4e7533
-1	260	1713604338209417199	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleList.c.o	d52b177b538da9b6
-1	357	1713679239177436332	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
-3	363	1713679239184733052	CMakeFiles/algorithm.dir/src/implementation/stack/stack.c.o	76bf0972dcbec899
+235	354	1713679774572315951	algorithm	76913d5dc7638680
 0	213	1713679324153924515	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleList.c.o	d52b177b538da9b6
-1	277	1713679374774470794	CMakeFiles/algorithm.dir/src/implementation/stack/stack.c.o	76bf0972dcbec899
-0	211	1713679397854661030	CMakeFiles/algorithm.dir/src/implementation/stack/stack.c.o	76bf0972dcbec899
+0	57	1713679789376379205	build.ninja	95a235b2469fe5eb
+0	302	1713596821356976911	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSample.c.o	4757f35b46b6e8f0
+1	235	1713679774455080958	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
+1	275	1713679619318629841	CMakeFiles/algorithm.dir/src/implementation/stack/stack.c.o	76bf0972dcbec899
+1	207	1713679673923555985	CMakeFiles/algorithm.dir/src/implementation/stack/Stack.c.o	ad489d12b8b5383

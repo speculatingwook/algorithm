@@ -2,9 +2,10 @@
 int SingleListSample();
 int SingleList();
 int Stack();
+
 int main() {
+    Stack();
 //    SingleListSample();
 //    SingleList();
-    Stack();
     return 0;
 }

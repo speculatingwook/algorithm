@@ -12,18 +12,18 @@ typedef struct NODE
     struct NODE* next;
 } NODE;
 
-NODE* g_pHead = { 0 };
+NODE* stack_head = { 0 };
 
 int IsStackEmpty()
 {
-    if (g_pHead->next == NULL)
+    if (stack_head->next == NULL)
         return 1;
     return 0;
 }
 
 // 전체 데이터 출력
-void printList(void){
-    NODE* pHead = g_pHead;
+void printStackList(void){
+    NODE* pHead = stack_head;
     while(pHead != NULL){
         printf("[%p] %s, next[%p]\n", pHead, pHead->szData, pHead->next);
         pHead = pHead->next;
@@ -50,24 +50,24 @@ int PushData(char* pszData)
     memset(pNode, 0, sizeof(NODE));
     strncpy(pNode-> szData, pszData, sizeof(pNode -> szData));
 
-    if(IsStackEmpty())
-        g_pHead->next = pNode;
+    if(IsStackEmpty() == 1)
+        stack_head->next = pNode;
     else
     {
-        pNode ->next = g_pHead->next;
-        g_pHead->next = pNode;
+        pNode ->next = stack_head->next;
+        stack_head->next = pNode;
     }
     return 1;
 }
 
 int PopData(NODE* pPopNode)
 {
-    NODE* stack_pointer = g_pHead->next;
+    NODE* stack_pointer = stack_head->next;
     if(IsStackEmpty())
         return 0;
     memcpy(pPopNode, stack_pointer, sizeof(NODE));
 
-    g_pHead->next = stack_pointer->next;
+    stack_head->next = stack_pointer->next;
     free(stack_pointer);
     return 1;
 }
