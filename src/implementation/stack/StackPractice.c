@@ -14,9 +14,10 @@ typedef struct NODE
 
 NODE* stack_head = NULL;
 
+
 int IsStackEmpty()
 {
-    if (stack_head->next == NULL)
+    if (stack_head == NULL ||stack_head->next == NULL)
         return 1;
     return 0;
 }
