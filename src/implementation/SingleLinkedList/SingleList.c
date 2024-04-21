@@ -72,6 +72,7 @@ void ReleaseList(void)
         printf("Delete: [%p] %s\n", pDelete, pDelete->szData);
         free(pDelete);
     }
+    g_pHead->next = 0;
 }
 
 // 데이터 조회
