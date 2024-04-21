@@ -11,14 +11,14 @@ typedef struct NODE {
     struct NODE* next;
 } NODE;
 
-NODE* stack_head = NULL;
+NODE* p_head = NULL;
 
 int IsStackEmpty() {
-    return (stack_head == NULL || stack_head->next == NULL);
+    return (p_head == NULL || p_head->next == NULL);
 }
 
 void printStackList(void) {
-    NODE* pHead = stack_head->next;
+    NODE* pHead = p_head->next;
     while (pHead != NULL) {
         printf("[%p] %s, next[%p]\n", pHead, pHead->szData, pHead->next);
         pHead = pHead->next;
@@ -26,15 +26,15 @@ void printStackList(void) {
 }
 
 void ReleaseStackList(void) {
-    NODE* pTmp = stack_head->next;
+    NODE* pTmp = p_head->next;
     while (pTmp != NULL) {
         NODE* pDelete = pTmp;
         pTmp = pTmp->next;
         printf("Delete: [%p] %s\n", pDelete, pDelete->szData);
         free(pDelete);
     }
-    free(stack_head);
-    stack_head = NULL;
+    free(p_head);
+    p_head = NULL;
 }
 
 int PushData(char* pszData) {
@@ -42,13 +42,13 @@ int PushData(char* pszData) {
     memset(pNode, 0, sizeof(NODE));
     strncpy(pNode->szData, pszData, sizeof(pNode->szData));
 
-    if (stack_head == NULL) {
-        stack_head = (NODE*)malloc(sizeof(NODE));
-        memset(stack_head, 0, sizeof(NODE));
-        stack_head->next = pNode;
+    if (p_head == NULL) {
+        p_head = (NODE*)malloc(sizeof(NODE));
+        memset(p_head, 0, sizeof(NODE));
+        p_head->next = pNode;
     } else {
-        pNode->next = stack_head->next;
-        stack_head->next = pNode;
+        pNode->next = p_head->next;
+        p_head->next = pNode;
     }
     return 1;
 }
@@ -57,9 +57,9 @@ int PopData(NODE* pPopNode) {
     if (IsStackEmpty())
         return 0;
 
-    NODE* stack_pointer = stack_head->next;
+    NODE* stack_pointer = p_head->next;
     memcpy(pPopNode, stack_pointer, sizeof(NODE));
-    stack_head->next = stack_pointer->next;
+    p_head->next = stack_pointer->next;
     free(stack_pointer);
     return 1;
 }
