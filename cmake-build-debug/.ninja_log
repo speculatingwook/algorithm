@@ -1,10 +1,19 @@
 # ninja log v5
-2	688	1713439011503662327	CMakeFiles/algorithm.dir/main.cpp.o	9627864829f7016
-214	341	1713683061673404089	algorithm	6678454ac0a03bbe
-1	223	1713680614288055935	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleList.c.o	d52b177b538da9b6
-0	57	1713684799700314773	build.ninja	95a235b2469fe5eb
-1	223	1713680614288056102	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSample.c.o	4757f35b46b6e8f0
-0	203	1713682349632371260	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
-1	275	1713679619318629841	CMakeFiles/algorithm.dir/src/implementation/stack/stack.c.o	76bf0972dcbec899
-1	207	1713679673923555985	CMakeFiles/algorithm.dir/src/implementation/stack/Stack.c.o	ad489d12b8b5383
 0	214	1713683061553031686	CMakeFiles/algorithm.dir/src/implementation/stack/StackPractice.c.o	9d0d9a8724fa137f
+1	207	1713679673923555985	CMakeFiles/algorithm.dir/src/implementation/stack/Stack.c.o	ad489d12b8b5383
+1	275	1713679619318629841	CMakeFiles/algorithm.dir/src/implementation/stack/stack.c.o	76bf0972dcbec899
+0	203	1713682349632371260	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
+1	223	1713680614288056102	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSample.c.o	4757f35b46b6e8f0
+0	57	1713685163163827268	build.ninja	95a235b2469fe5eb
+1	223	1713680614288055935	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleList.c.o	d52b177b538da9b6
+214	341	1713683061673404089	algorithm	6678454ac0a03bbe
+2	688	1713439011503662327	CMakeFiles/algorithm.dir/main.cpp.o	9627864829f7016
+0	57	1713685163163827268	build.ninja	95a235b2469fe5eb
+1	222	1713685163385565731	CMakeFiles/algorithm.dir/src/implementation/datastructure/SingleListSample.c.o	1dc8069e97815497
+0	263	1713685163430219411	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
+1	267	1713685163436856736	CMakeFiles/algorithm.dir/src/implementation/datastructure/stack.c.o	4242b1eea8d2fe7d
+1	267	1713685163435657825	CMakeFiles/algorithm.dir/src/implementation/datastructure/SingleList.c.o	690c70f2a5def5be
+2	268	1713685163436527791	CMakeFiles/algorithm.dir/src/implementation/datastructure/queue.c.o	1301c1edb27fe565
+0	211	1713685194841545093	CMakeFiles/algorithm.dir/src/implementation/datastructure/queue.c.o	1301c1edb27fe565
+0	201	1713685211586656491	CMakeFiles/algorithm.dir/src/implementation/datastructure/stack.c.o	4242b1eea8d2fe7d
+201	293	1713685211678965974	algorithm	c2cbebdaee9a85d4

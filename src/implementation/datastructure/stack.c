@@ -25,7 +25,7 @@ void printStackList(void) {
     }
 }
 
-void ReleaseList(void) {
+void ReleaseStackList(void) {
     NODE* pTmp = stack_head->next;
     while (pTmp != NULL) {
         NODE* pDelete = pTmp;
@@ -80,6 +80,6 @@ int Stack() {
     PopData(&node);
     printf("Pop: %s\n", node.szData);
 
-    ReleaseList();
+    ReleaseStackList();
     return 0;
 }
