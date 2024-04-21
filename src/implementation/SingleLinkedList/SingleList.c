@@ -76,30 +76,19 @@ void ReleaseList(void)
 // 데이터 조회
 int FindData(char* pszData)
 {
-    NODE* pTmp = g_pHead;
-    NODE* pPrev = NULL;
-    while(pTmp != NULL)
+    NODE* pCur = g_pHead->next;
+    NODE* pPrev = &g_pHead;
+    while(pCur !=NULL)
     {
-        if(strcmp(pTmp -> szData, pszData) == 0)
-        {
-            //삭제
-            printf("DeleteData(): %s\n", pTmp->szData);
-            if(pPrev != NULL)
-                pPrev-> next = pTmp -> next;
-            else
-            {
-                // 삭제할 데이터가 첫번째
-                g_pHead = pTmp -> next;
-                free(pTmp);
-            }
+        if(strcmp(pCur -> szData, pszData) == 0)
             return 1;
-        }
-        pPrev = pTmp;
-        pTmp = pTmp -> next;
+        pCur = pCur->next;
+        pPrev = pPrev->next;
     }
 
     return 0;
 }
+
 
 int SingleList(){
     // List 테스트를 위한 코드
