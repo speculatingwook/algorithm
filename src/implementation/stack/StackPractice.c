@@ -12,7 +12,7 @@ typedef struct NODE
     struct NODE* next;
 } NODE;
 
-NODE* stack_head = { 0 };
+NODE* stack_head = NULL;
 
 int IsStackEmpty()
 {
