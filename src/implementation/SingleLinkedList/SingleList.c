@@ -88,6 +88,26 @@ int FindData(char* pszData)
 
     return 0;
 }
+// 데이터 삭제
+int DeleteData(char* pszData)
+{
+    NODE* pCur = g_pHead->next;
+    NODE* pPrev = &g_pHead;
+    while(pCur != NULL)
+    {
+        if (strcmp(pCur->szData, pszData) == 0)
+        {
+            //삭제
+            printf("DeleteData(): %s\n", pCur->szData);
+            pPrev->next = pCur->next;
+            free(pCur);
+            return 1;
+        }
+        pCur = pCur-> next;
+        pPrev = pPrev -> next;
+    }
+    return 0;
+}
 
 
 int SingleList(){
