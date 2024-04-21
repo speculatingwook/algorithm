@@ -26,16 +26,18 @@ void printQueueList(void) {
     }
 }
 
-void ReleaseQueueList(void) {
+void ReleaseQueueList(void)
+{
+    printf("\nReleaseList()\n");
     NODE* pTmp = p_queue_head->next;
     while (pTmp != NULL) {
         NODE* pDelete = pTmp;
         pTmp = pTmp->next;
+
         printf("Delete: [%p] %s\n", pDelete, pDelete->szData);
         free(pDelete);
     }
-    free(p_queue_head);
-    p_queue_head = NULL;
+    p_queue_head = 0;
 }
 
 
@@ -52,11 +54,10 @@ int Enqueue(char* pszData)
 
         // 리스트에 추가된 첫번째 데이터 처리
         p_queue_head->next = pNode;
-        g_pTail = pNode;
     } else {
-        pNode->next = p_queue_head->next;
-        p_queue_head->next = pNode;
+        g_pTail->next = pNode;
     }
+    g_pTail = pNode;
     return 1;
 }
 
