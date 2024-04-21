@@ -79,7 +79,7 @@ void ReleaseList(void)
 NODE* FindData(char* pszData)
 {
     NODE* pCur = g_pHead->next;
-    NODE* pPrev = &g_pHead;
+    NODE* pPrev = (NODE *) &g_pHead;
     while(pCur !=NULL)
     {
         if(strcmp(pCur -> szData, pszData) == 0)
@@ -109,12 +109,9 @@ int DeleteData(char* pszData)
 
 int SingleList(){
     // List 테스트를 위한 코드
-    InsertNewNode("TEST01");
-    InsertNewNode("TEST02");
-    InsertNewNode("TEST03");
+    InsertAtHead("TEST01");
+    InsertAtHead("TEST02");
+    InsertAtHead("TEST03");
     printList();
-    if(FindData("TEST01") == 1)
-        printf("FindData(): TEST01 found\n");
-    ReleaseList();
     return 0;
 }

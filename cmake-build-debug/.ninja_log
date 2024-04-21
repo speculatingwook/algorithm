@@ -5,3 +5,8 @@
 0	303	1713596821357009035	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
 260	379	1713604338327432660	algorithm	ccb4e2dbac4e7533
 1	260	1713604338209417199	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleList.c.o	d52b177b538da9b6
+1	357	1713679239177436332	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
+3	363	1713679239184733052	CMakeFiles/algorithm.dir/src/implementation/stack/stack.c.o	76bf0972dcbec899
+0	213	1713679324153924515	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleList.c.o	d52b177b538da9b6
+1	277	1713679374774470794	CMakeFiles/algorithm.dir/src/implementation/stack/stack.c.o	76bf0972dcbec899
+0	211	1713679397854661030	CMakeFiles/algorithm.dir/src/implementation/stack/stack.c.o	76bf0972dcbec899
