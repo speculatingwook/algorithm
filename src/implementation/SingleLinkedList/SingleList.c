@@ -74,14 +74,14 @@ void ReleaseList(void)
 }
 
 // 데이터 조회
-int FindData(char* pszData)
+NODE* FindData(char* pszData)
 {
     NODE* pCur = g_pHead->next;
     NODE* pPrev = &g_pHead;
     while(pCur !=NULL)
     {
         if(strcmp(pCur -> szData, pszData) == 0)
-            return 1;
+            return pPrev;
         pCur = pCur->next;
         pPrev = pPrev->next;
     }
@@ -91,20 +91,15 @@ int FindData(char* pszData)
 // 데이터 삭제
 int DeleteData(char* pszData)
 {
-    NODE* pCur = g_pHead->next;
-    NODE* pPrev = &g_pHead;
-    while(pCur != NULL)
+    NODE* pPrev = FindData(pszData);
+    if(pPrev != 0)
     {
-        if (strcmp(pCur->szData, pszData) == 0)
-        {
-            //삭제
-            printf("DeleteData(): %s\n", pCur->szData);
-            pPrev->next = pCur->next;
-            free(pCur);
-            return 1;
-        }
-        pCur = pCur-> next;
-        pPrev = pPrev -> next;
+        NODE* pDelete = pPrev -> next;
+        pPrev->next = pDelete -> next;
+
+        printf("DeleteData(): %s\n", pDelete->szData);
+        free(pDelete);
+        return 1;
     }
     return 0;
 }
