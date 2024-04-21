@@ -1,3 +1,7 @@
+//
+// Created by Yoon BeongWook on 4/21/24.
+//
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -77,10 +81,5 @@ int Stack() {
     printf("Pop: %s\n", node.szData);
 
     ReleaseList();
-    return 0;
-}
-
-int main() {
-    Stack();
     return 0;
 }
