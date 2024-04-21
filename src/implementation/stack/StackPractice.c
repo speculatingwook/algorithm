@@ -74,10 +74,11 @@ int PopData(NODE* pPopNode)
 
 
 int Stack(){
+    printf("stack");
     //Stack 테스트를 위한 코드
-    PushData("TEST01");
-    PushData("TEST02");
-    PushData("TEST03");
+//    PushData("TEST01");
+//    PushData("TEST02");
+//    PushData("TEST03");
     NODE node = {0};
     PopData(&node);
     printf("Pop: %s\n", node.szData);

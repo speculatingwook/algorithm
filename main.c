@@ -7,7 +7,7 @@ int Stack();
 
 int main() {
     printf("test");
-//    Stack();
+    Stack();
 //    SingleListSample();
 //    SingleList();
     return 0;

@@ -17,3 +17,10 @@
 196	294	1713680141723515300	algorithm	6678454ac0a03bbe
 0	226	1713680159319310679	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
 226	329	1713680159420112686	algorithm	6678454ac0a03bbe
+1	198	1713680187092537464	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
+1	199	1713680187093842211	CMakeFiles/algorithm.dir/src/implementation/stack/StackPractice.c.o	9d0d9a8724fa137f
+199	296	1713680187190412737	algorithm	6678454ac0a03bbe
+0	287	1713680446756388623	CMakeFiles/algorithm.dir/src/implementation/stack/StackPractice.c.o	9d0d9a8724fa137f
+287	417	1713680446885979410	algorithm	6678454ac0a03bbe
+0	212	1713680489748911897	CMakeFiles/algorithm.dir/src/implementation/stack/StackPractice.c.o	9d0d9a8724fa137f
+212	328	1713680489862004947	algorithm	6678454ac0a03bbe
