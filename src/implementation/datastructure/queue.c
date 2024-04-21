@@ -18,7 +18,8 @@ int IsQueueEmpty() {
     return (p_queue_head == NULL || p_queue_head->next == NULL);
 }
 
-void printQueueList(void) {
+void PrintQueueList(void) {
+    printf("\nPrintQueueList()\n");
     NODE* pHead = p_queue_head->next;
     while (pHead != NULL) {
         printf("[%p] %s, next[%p]\n", pHead, pHead->szData, pHead->next);
@@ -38,6 +39,7 @@ void ReleaseQueueList(void)
         free(pDelete);
     }
     p_queue_head = 0;
+    g_pTail = 0;
 }
 
 
@@ -69,6 +71,7 @@ int Dequeue(NODE* pGetNode) {
     memcpy(pGetNode, stack_pointer, sizeof(NODE));
     p_queue_head->next = stack_pointer->next;
     free(stack_pointer);
+    printf("Dequeue: %s\n", pGetNode->szData);
     return 1;
 }
 
@@ -79,18 +82,16 @@ int Queue() {
     Enqueue("TEST02");
     Enqueue("TEST03");
 
-    printQueueList();
+    PrintQueueList();
 
     NODE node = {0};
+    printf("\nDequeue()\n");
     Dequeue(&node);
-    printf("Dequeue: %s\n", node.szData);
-
     Dequeue(&node);
-    printf("Dequeue: %s\n", node.szData);
-
     Dequeue(&node);
-    printf("Dequeue: %s\n", node.szData);
 
+
+    PrintQueueList();
     ReleaseQueueList();
     return 0;
 }
