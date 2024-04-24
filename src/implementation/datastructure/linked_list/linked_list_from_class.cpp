@@ -42,7 +42,7 @@ List::~List(){
     }
 }
 
-int List::Search(int x){
+int List::Search(int x) {
     p = nullptr;
     l = head;
     while (l != nullptr) {
