@@ -10,4 +10,5 @@ add_executable(algorithm main.c
         src/implementation/datastructure/SingleList.c
         src/implementation/datastructure/stack.c
         src/implementation/datastructure/queue.c
+        src/implementation/datastructure/linked_list_from_class.cpp
 )
