@@ -2,14 +2,17 @@
 ## 작동 방법
 
 1. 가운데 위치를 확인
- ![](/docs/images/binary_search_1.png)
+ ![](https://i.imgur.com/weq4Ofj.png)
+
 
  2. 가운데 값과 찾으려는 값을 비교
-![](/docs/images/binary_search_2.png)
+![](https://i.imgur.com/1XO9wAa.png)
+
 
 
 3. 다시 가운데 위치를 확인
-![](/docs/images/binary_search_3.png)
+![Uploading file...tkcn6]()
+
 
 
 4. 비교 후 다시 정함
