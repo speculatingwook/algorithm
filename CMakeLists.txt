@@ -6,9 +6,11 @@ set(CMAKE_CXX_STANDARD 17)
 
 
 add_executable(algorithm main.c
-        src/implementation/datastructure/SingleListSample.c
-        src/implementation/datastructure/SingleList.c
-        src/implementation/datastructure/stack.c
-        src/implementation/datastructure/queue.c
-        src/implementation/datastructure/linked_list_from_class.cpp
+        src/implementation/datastructure/linked_list/SingleListSample.c
+        src/implementation/datastructure/linked_list/SingleList.c
+        src/implementation/datastructure/stack/stack.c
+        src/implementation/datastructure/queue/queue.c
+        src/implementation/datastructure/linked_list/linked_list_from_class.cpp
+        src/implementation/datastructure/stack/stack_from_class.c
+        src/implementation/datastructure/queue/queue_from_class.c
 )
