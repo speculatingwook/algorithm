@@ -13,17 +13,17 @@
 
 
 
-
-## Free Block List on File Systems
+## 활용 사례
+### Free Block List on File Systems
 ![](https://i.imgur.com/Qv8I6ja.png)
 
-### (a) 자유 블록 리스트
+#### (a) 자유 블록 리스트(free block list)
 
 - 연결 리스트 형태로 사용되지 않는 디스크 블록의 번호들을 관리
 - 새로운 파일을 저장할 때 이 리스트에서 빈 블록을 할당받음
 - 파일이 삭제되면 해당 블록 번호가 이 리스트에 추가
 
-### (b) 비트맵
+#### (b) 비트맵(bitmap)
 
 - 비트 배열로 전체 디스크 블록의 사용 여부를 추적
 - 각 비트는 해당 블록이 사용 중인지(1) 아니면 비어있는지(0)를 나타냄
