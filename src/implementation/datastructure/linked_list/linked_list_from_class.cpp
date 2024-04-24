@@ -5,7 +5,7 @@
 class Node {
 public:
     int data;
-    Node *n;
+    Node *next;
 };
 
 class List {
@@ -36,7 +36,7 @@ List::~List(){
     Node *current, *next;
     current = head;
     while(current != nullptr) {
-        next = current -> n;
+        next = current -> next;
         delete current;
         current = next;
     }
@@ -49,9 +49,10 @@ int List::Search(int x){
         if(l-> data == x) return 1;
         else if(l->data > x) return 0;
         else{
-            p = l; l = l->n;
+            p = l; l = l->next;
         }
     }
+    return 0;
 }
 
 int List::Insert(int x) {
@@ -61,19 +62,19 @@ int List::Insert(int x) {
         if(p == nullptr)
             head = new_node;
         else
-            p->n = new_node;
-        new_node -> n = l;
+            p->next = new_node;
+        new_node -> next = l;
         return 1;
     }
     return 0;
 }
 
-int List::Delete(int x){
+int List::Delete(int x) {
     if (Search(x)) {
         if(p == nullptr)
-            head = l->n;
+            head = l->next;
         else
-            p->n = l-> n;
+            p->next = l-> next;
         delete l;
         return 1;
     }
