@@ -21,7 +21,7 @@ int IsEmpty()
     return 0;
 }
 
-// 연결 리스트 전체 데이터 출력
+// 연결 리스트 전체 데이터 출력₩
 void printList(void){
     NODE* pHead = g_pHead;
     while(pHead != NULL){
