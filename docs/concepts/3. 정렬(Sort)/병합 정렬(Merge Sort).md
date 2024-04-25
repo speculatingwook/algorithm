@@ -42,7 +42,7 @@ public class MergeSort {
 
     public static void merge(int[] array, int[] leftArray, int[] rightArray) {
         int leftIndex = 0, rightIndex = 0, mergedIndex = 0;
-
+    // 왼쪽과 오른쪽 배열을 비교, 그중 큰값을 먼저 병합
         while (leftIndex < leftArray.length && rightIndex < rightArray.length) {
             if (leftArray[leftIndex] < rightArray[rightIndex]) {
                 array[mergedIndex++] = leftArray[leftIndex++];
@@ -50,7 +50,7 @@ public class MergeSort {
                 array[mergedIndex++] = rightArray[rightIndex++];
             }
         }
-
+        
         while (leftIndex < leftArray.length) {
             array[mergedIndex++] = leftArray[leftIndex++];
         }
