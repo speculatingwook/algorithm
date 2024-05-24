@@ -2,7 +2,7 @@
 // Created by Yoon BeongWook on 4/24/24.
 //
 
-int Stack[N];
+int Stack[100];
 int SP;
 
 int init(){

@@ -1,14 +1,15 @@
 # ninja log v5
-1	207	1713679673923555985	CMakeFiles/algorithm.dir/src/implementation/stack/Stack.c.o	ad489d12b8b5383
-1	267	1713685163435657825	CMakeFiles/algorithm.dir/src/implementation/datastructure/SingleList.c.o	690c70f2a5def5be
-0	263	1713685163430219411	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
-1	223	1713680614288056102	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleListSample.c.o	4757f35b46b6e8f0
-1	212	1713686489750500832	CMakeFiles/algorithm.dir/src/implementation/datastructure/queue.c.o	1301c1edb27fe565
-0	57	1714306112476866813	build.ninja	95a235b2469fe5eb
-1	266	1713685542391097471	CMakeFiles/algorithm.dir/src/implementation/datastructure/stack.c.o	4242b1eea8d2fe7d
-1	275	1713679619318629841	CMakeFiles/algorithm.dir/src/implementation/stack/stack.c.o	76bf0972dcbec899
-0	214	1713683061553031686	CMakeFiles/algorithm.dir/src/implementation/stack/StackPractice.c.o	9d0d9a8724fa137f
-1	222	1713685163385565731	CMakeFiles/algorithm.dir/src/implementation/datastructure/SingleListSample.c.o	1dc8069e97815497
-1	223	1713680614288055935	CMakeFiles/algorithm.dir/src/implementation/SingleLinkedList/SingleList.c.o	d52b177b538da9b6
+5	321	1716179995191101594	CMakeFiles/algorithm.dir/main.c.o	c19c8b9051722f6f
+1	86	1716180293171931609	build.ninja	95a235b2469fe5eb
+9	561	1716179718319680630	CMakeFiles/algorithm.dir/src/implementation/datastructure/linked_list/single_linked_list.c.o	d42b5939ede5863d
 212	309	1713686489847675312	algorithm	c2cbebdaee9a85d4
-2	688	1713439011503662327	CMakeFiles/algorithm.dir/main.cpp.o	9627864829f7016
+9	517	1716179718248104521	CMakeFiles/algorithm.dir/src/implementation/datastructure/linked_list/SingleListSample.c.o	70d855db33651138
+10	565	1716179718324642611	CMakeFiles/algorithm.dir/src/implementation/datastructure/queue/queue.c.o	f110fe5de216d741
+10	557	1716179718312740349	CMakeFiles/algorithm.dir/src/implementation/datastructure/stack/stack_from_class.c.o	ab3498c85e89ed10
+10	565	1716179718322291741	CMakeFiles/algorithm.dir/src/implementation/datastructure/stack/stack.c.o	a854acb95764cd80
+518	608	1716179718370667178	CMakeFiles/algorithm.dir/src/implementation/datastructure/linked_list/linked_list_from_class.cpp.o	3caaa5cfd6675d1b
+557	1895	1716179719655845145	CMakeFiles/algorithm.dir/src/implementation/datastructure/tree/avl_tree.cpp.o	eca1b97b4fd38238
+551	626	1716179718389490514	CMakeFiles/algorithm.dir/src/implementation/datastructure/queue/queue_from_class.c.o	b50996c60434e5af
+0	89	1716180293171931609	build.ninja	95a235b2469fe5eb
+1	327	1716180293511480936	CMakeFiles/algorithm.dir/src/implementation/datastructure/tree/avl_tree.c.o	5a62d5e946abc74c
+327	485	1716180293669446127	algorithm	943785e66aea6022

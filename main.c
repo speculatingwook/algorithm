@@ -3,11 +3,13 @@
 
 //int SingleListSample();
 //int SingleList();
-int Queue();
-int Stack();
+//int Queue();
+//int Stack();
+int avl_tree_test();
 
 int main() {
-    Queue();
+    avl_tree_test();
+//    Queue();
 //    Stack();
 //    SingleListSample();
 //    SingleList();
