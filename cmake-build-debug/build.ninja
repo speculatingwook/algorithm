@@ -85,11 +85,11 @@ build CMakeFiles/algorithm.dir/src/implementation/datastructure/linked_list/link
   OBJECT_DIR = CMakeFiles/algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithm.dir/src/implementation/datastructure/linked_list
 
-build CMakeFiles/algorithm.dir/src/implementation/datastructure/tree/avl_tree.c.o: C_COMPILER__algorithm_unscanned_Debug /Users/yoonbeongwook/Documents/study_document/algorithm/src/implementation/datastructure/tree/avl_tree.c || cmake_object_order_depends_target_algorithm
-  DEP_FILE = CMakeFiles/algorithm.dir/src/implementation/datastructure/tree/avl_tree.c.o.d
+build CMakeFiles/algorithm.dir/src/implementation/datastructure/tree/avl_tree/avl_tree.c.o: C_COMPILER__algorithm_unscanned_Debug /Users/yoonbeongwook/Documents/study_document/algorithm/src/implementation/datastructure/tree/avl_tree/avl_tree.c || cmake_object_order_depends_target_algorithm
+  DEP_FILE = CMakeFiles/algorithm.dir/src/implementation/datastructure/tree/avl_tree/avl_tree.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/algorithm.dir
-  OBJECT_FILE_DIR = CMakeFiles/algorithm.dir/src/implementation/datastructure/tree
+  OBJECT_FILE_DIR = CMakeFiles/algorithm.dir/src/implementation/datastructure/tree/avl_tree
 
 
 # =============================================================================
@@ -99,7 +99,7 @@ build CMakeFiles/algorithm.dir/src/implementation/datastructure/tree/avl_tree.c.
 #############################################
 # Link the executable algorithm
 
-build algorithm: CXX_EXECUTABLE_LINKER__algorithm_Debug CMakeFiles/algorithm.dir/main.c.o CMakeFiles/algorithm.dir/src/implementation/datastructure/linked_list/SingleListSample.c.o CMakeFiles/algorithm.dir/src/implementation/datastructure/linked_list/single_linked_list.c.o CMakeFiles/algorithm.dir/src/implementation/datastructure/stack/stack.c.o CMakeFiles/algorithm.dir/src/implementation/datastructure/queue/queue.c.o CMakeFiles/algorithm.dir/src/implementation/datastructure/linked_list/linked_list_from_class.cpp.o CMakeFiles/algorithm.dir/src/implementation/datastructure/tree/avl_tree.c.o
+build algorithm: CXX_EXECUTABLE_LINKER__algorithm_Debug CMakeFiles/algorithm.dir/main.c.o CMakeFiles/algorithm.dir/src/implementation/datastructure/linked_list/SingleListSample.c.o CMakeFiles/algorithm.dir/src/implementation/datastructure/linked_list/single_linked_list.c.o CMakeFiles/algorithm.dir/src/implementation/datastructure/stack/stack.c.o CMakeFiles/algorithm.dir/src/implementation/datastructure/queue/queue.c.o CMakeFiles/algorithm.dir/src/implementation/datastructure/linked_list/linked_list_from_class.cpp.o CMakeFiles/algorithm.dir/src/implementation/datastructure/tree/avl_tree/avl_tree.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/algorithm.dir
   POST_BUILD = :
