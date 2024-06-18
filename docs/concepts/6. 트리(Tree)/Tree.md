@@ -23,3 +23,8 @@
 ![|275](https://i.imgur.com/yZibagF.png)
 - 깊이(depth): 노드 -> 루트 경로의 길이
 - 높이(height) 노드 -> 리프 경로의 최대 길이
+
+![|282](https://i.imgur.com/VTyOneW.png)
+
+- 하위 트리(subtree): 어떤 노드 아래의 모든 것을 포함하는 트리
+	- 재귀적: 하위 트리 그 자체가 트리
