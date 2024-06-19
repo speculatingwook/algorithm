@@ -104,4 +104,8 @@ public class Node {
 	- 없으면 `G[i][j] = 0`
 - G가 가중 그래프이면 0/1 대신 실제 가중치를 저장
 
+#### 예시
+![|173](https://i.imgur.com/JPLcb2t.png)
+
+
 ### 3. 인접 리스트(adjacency list)
