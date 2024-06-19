@@ -128,8 +128,55 @@ public class Node {
 		this.data = data;
 	}
 
-	public Node 
+	public Node getLeft(){
+		return this.left;
+	}
 	
+	public Node getRight(){
+		return this.right;
+	}
+	
+	public static Node insertRecursive(final Node node, int data) {
+		if (node == null){
+			return new Node(data);
+		}
+		
+		if (data < node.data) {
+			node.left = insertRecursive(node.left, data);
+		} else {
+			node.right = insertRecursive(node.right, data);
+		}
+		
+		return node;
+	}
 
 }
 ```
+
+
+
+## BST 삭제
+
+### 곧바로 자식을 연결하면 안되는 이유
+- BST는 정렬된 배열과 개념상 같음
+	- 중위 순회흫 하면 정렬된 배열이 나옴
+- 따라서 노드를 삭제한 뒤에도 올바른 BST를 유지하려면?
+	- 정렬된 배열에서 값을 하나 삭제하듯이 처리
+
+
+### BST 노드 삭제 전략
+1. 지울 값을 가지고 있는 노드를 찾음
+2. 그 바로 전 값을 가진 노드를 찾음
+	- 왼쪽 하위 트리의 제일 오른쪽 리프
+3. 두 값을 교환
+4. 리프 노드를 삭제
+
+
+### BST 삭제의 시간 복잡도
+1. 지울 값을 가지고 있는 노드를 찾음
+2. 그 바로 전 값을 가진 노드를 찾음
+3. 두 값을 교환
+4. 리프 노드를 삭제
+
+
+- O(log n)
