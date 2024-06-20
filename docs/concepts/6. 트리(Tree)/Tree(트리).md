@@ -28,3 +28,49 @@
 
 - 하위 트리(subtree): 어떤 노드 아래의 모든 것을 포함하는 트리
 	- 재귀적: 하위 트리 그 자체가 트리
+
+
+
+
+## 깊은 트리 복사 코드
+
+```java
+public static Node deepCopyTree(Node root) {
+    if (root == null) {
+        return null;
+    }
+
+    // 현재 노드 복사
+    Node newNode = new Node(root.data);
+
+    // 왼쪽 서브트리 복사
+    newNode.left = deepCopyTree(root.left);
+
+    // 오른쪽 서브트리 복사
+    newNode.right = deepCopyTree(root.right);
+
+    return newNode;
+}
+```
+
+
+```cpp
+Node* deepCopyTree(Node* root) {
+    if (root == nullptr) {
+        return nullptr;
+    }
+
+    // 현재 노드 복사
+    Node* newNode = new Node(root->data);
+
+    // 왼쪽 서브트리 복사
+    newNode->left = deepCopyTree(root->left);
+
+    // 오른쪽 서브트리 복사
+    newNode->right = deepCopyTree(root->right);
+
+    return newNode;
+}
+```
+
+

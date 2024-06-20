@@ -21,6 +21,18 @@ public static void traverseInOrder(Node node) {
 }
 ```
 
+```cpp
+void traverseInOrder(Node* node) {
+    if (node == nullptr) {
+        return;
+    }
+    
+    traverseInOrder(node->left);
+    std::cout << node->data << " ";
+    traverseInOrder(node->right);
+}
+```
+
 ## 전위 순회
 - 루트 노드부터 시작
 - 다음 단계를 재귀적으로 실행
@@ -50,13 +62,118 @@ public static void traverseInOrder(Node node) {
 	- 따라서 컴퓨터로 계산하기 좀 더 편함
 		$-*A -BC + DE$
 
+### 전위 순회 코드
+
+#### 재귀
+```java
+public static void traversePreOrder(Node node) {
+    if(node == null) {
+        return;
+    }
+    
+    System.out.println(node.data);
+    traversePreOrder(node.left);
+    traversePreOrder(node.right);
+}
+```
+
+```cpp
+void traversePreOrder(Node* node) {
+    if (node == nullptr) {
+        return;
+    }
+    
+    std::cout << node->data << " ";
+    traversePreOrder(node->left);
+    traversePreOrder(node->right);
+}
+```
+
+#### 재귀 x
+```java
+import java.util.Stack;
+
+public static void traversePreOrderIterative(Node root) {
+    if (root == null) {
+        return;
+    }
+
+    Stack<Node> nodes = new Stack<>();
+    nodes.push(root);
+
+    while (!nodes.isEmpty()) {
+        Node node = nodes.pop();
+        System.out.print(node.data + " ");
+
+        if (node.right != null) {
+            nodes.push(node.right);
+        }
+
+        if (node.left != null) {
+            nodes.push(node.left);
+        }
+    }
+}
+```
+
+```cpp
+#include <stack>
+#include <iostream>
+
+void traversePreOrderIterative(Node* root) {
+    if (root == nullptr) {
+        return;
+    }
+
+    std::stack<Node*> nodes;
+    nodes.push(root);
+
+    while (!nodes.empty()) {
+        Node* node = nodes.top();
+        nodes.pop();
+        std::cout << node->data << " ";
+
+        if (node->right) {
+            nodes.push(node->right);
+        }
+
+        if (node->left) {
+            nodes.push(node->left);
+        }
+    }
+}
+```
+
 ## 후위 순회
 - 후위 표기법(postfix notation)
 	- 역 폴란드 표기법(reverse Polish notation)
 	$ABC -* DE +-$
 
 
+### 후위 순회 코드
+```java
+public static void traversePostOrder(Node node) {
+    if(node == null) {
+        return;
+    }
+    
+    traversePostOrder(node.left);
+    traversePostOrder(node.right);
+    System.out.println(node.data);
+}
+```
 
+```cpp
+void traversePostOrder(Node* node) {
+    if (node == nullptr) {
+        return;
+    }
+    
+    traversePostOrder(node->left);
+    traversePostOrder(node->right);
+    std::cout << node->data << " ";
+}
+```
 
 ## 전위/중위/후위 순회
 - 앞에서 본 예 외에도 알고리즘에 따라 셋중 하나를 사용
