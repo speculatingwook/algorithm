@@ -22,7 +22,8 @@
 ## 정렬 알고리즘의 안정성
 - 안전성(safety)이 아님!
 - 똑같은 키(key)를 가진 데이터들의 순서가 바뀌지 않느냐 여부
-![](sort_stability_1.png)
+![](https://i.imgur.com/32TB5EO.png)
+
 
 ## 안정성을 잘 모르는 이유
 - 같은 키를 가진 데이터의 순서가 바뀌어도 문제가 아닌 경우가 보통
@@ -36,10 +37,13 @@
 
 ## 안정성이 문제가 되는 경우
 1. 정렬의 기준이 되는 정렬 키(sort key)와 실제 데이터가 다름
-![](non_stable_sort_problem_1.png)
+
+![](https://i.imgur.com/8JRUc8a.png)
+
 
 2. 구조체 / 클래스의 일부 멤버만 정렬 키로 사용
-![](non_stable_sort_problem_2.png)
+
+![](https://i.imgur.com/U2qojSb.png)
 
 ## 대표적인 정렬 알고리즘
 
