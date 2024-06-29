@@ -15,6 +15,10 @@
 
 ## 활용 사례
 ### Free Block List on File Systems
+
+![|700](https://i.imgur.com/801w7CW.png)
+
+
 ![](https://i.imgur.com/Qv8I6ja.png)
 
 #### (a) 자유 블록 리스트(free block list)
